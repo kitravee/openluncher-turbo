@@ -83,3 +83,5 @@ Learn more about the power of Turborepo:
 
 - add package to workspace
 `yarn workspace main-web add -D typescript @types/react @types/node`
+
+`yarn workspace packages/eslint-config-custom add @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-airbnb eslint-config-airbnb-base eslint-config-airbnb-typescript eslint-plugin-import eslint-plugin-jest eslint-plugin-testing-library`

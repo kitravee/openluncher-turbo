@@ -27,6 +27,29 @@ module.exports = {
     },
   },
   rules: {
+    'no-console': [
+      2,
+      {
+        allow: ['warn', 'error'],
+      },
+    ],
+    'import/order': [
+      'warn',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+          'object',
+          'type',
+        ],
+        'newlines-between': 'always',
+        alphabetize: { order: 'asc', caseInsensitive: true },
+      },
+    ],
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': [
       2,
@@ -34,8 +57,6 @@ module.exports = {
         namedComponents: 'arrow-function',
       },
     ],
-
-    // next
     '@next/next/no-html-link-for-pages': 'off',
   },
   overrides: [
